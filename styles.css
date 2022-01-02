@@ -1,0 +1,202 @@
+﻿@font-face {
+    font-family: yekan;
+    src: url('fonts/Yekan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: roya;
+    src: url('fonts/RoyaR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: roya;
+    src: url('fonts/RoyaB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    direction: rtl;
+    font-family: yekan;
+    background-color: #eee;
+}
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+a {
+    text-decoration: none;
+}
+#topmenu {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    z-index: 1;
+    font-family:roya;
+}
+#topmenu ul {
+    position: absolute;
+    width: 100%;
+    max-width: 1280px;
+    top: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    font-size: 20px;
+    display: none;
+    line-height: 250%;
+}
+#topmenu a {
+    color: white;
+    display: block;
+    padding-right: 30px;
+    border-bottom: 1px solid gray;
+    transition: 0.3s;
+}
+#topmenu a:hover {
+    background-color: #ec5;
+    color: #222;
+}
+#button1 {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+#button2 {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+#header {
+    font-family:roya;
+    padding-top: 54px;
+    background-color: #347;
+}
+#logo {
+    display: none;
+}
+#search {
+    text-align: center;
+    color: white;
+}
+#search h1 {
+    margin-top: 15px;
+    font-size: 40px;
+}
+#search input[type="search"] {
+    max-width: 350px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+#search input[type="submit"] {
+    width: 80px;
+    border: none;
+    background-color: #3a3;
+    color: #eee;
+    height: 45px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#search input[type="submit"]:hover {
+    color: white;
+    background-color: #4a5;
+}
+#cats {
+    position: fixed;
+    top: 54px;
+    bottom: 0;
+    width: 300px;
+    right: -300px;
+    background-color: white;
+    line-height: 270%;
+    transition: 0.3s;    
+    box-shadow: 0 0 3px black;
+    z-index: 1;
+    overflow: auto;
+}
+#cats a {
+    display: block;
+    color: #333;
+    padding: 0 15px;
+    border-bottom: 1px solid #bcd;
+}
+#cats a:hover {
+    background-color: #bcd;
+}
+#cats .submenu a {
+    padding-right: 30px;
+    font-size: 14px;
+}
+#cats .submenu .submenu a {
+    padding-right: 45px;
+}
+#cats .plus {
+    float: left;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+#cats .submenu {
+    display: none;
+    background-color: #f7f7f7;
+}
+#cats .submenu .submenu {
+    background-color: #eee;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 720px) {
+    #logo {
+        display:block;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 960px) {
+    #button1, #button2 {
+        display: none;
+    }
+    #topmenu {
+        border-bottom: 4px solid green;
+        height: 50px;
+        position: static;
+    }
+    #topmenu ul {
+        display: flex !important;
+        position:static;
+        border: none;
+    }
+    #topmenu a {
+        padding: 0 30px;
+        border: none;
+        background-color:#444;
+        margin:0 2px;
+    }
+    #topmenu li:nth-child(4) {
+        margin-right: auto;
+    }
+    #header {
+        padding-top: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1140px) {
+
+}
